@@ -1,5 +1,5 @@
-import print_hello.hello
+from print_hello import Hello
 
 
 def test_print():
-    print_hello.hello.Hello("John").print()
+    Hello("John").print()
