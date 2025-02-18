@@ -1,3 +1,6 @@
+from glob import glob
+from os.path import splitext, basename
+
 from setuptools import setup, find_packages
 
 with open("requirements.txt") as f:
@@ -11,6 +14,7 @@ setup(
     author_email="sejoung@google.com",  # 이메일
     url="https://github.com/sejoung/print_hello",  # GitHub 또는 프로젝트 링크
     packages=find_packages(where="src"),  # 패키지 자동 검색
+    package_dir={"": "src"},  # 패키지 디렉토리 설정
     install_requires=requirements,  # 필수 의존성 패키지
     classifiers=[  # PyPI에서 패키지 정보 제공
         "Programming Language :: Python :: 3",
