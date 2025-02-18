@@ -1,6 +1,3 @@
-from glob import glob
-from os.path import splitext, basename
-
 from setuptools import setup, find_packages
 
 with open("requirements.txt") as f:
